@@ -51,7 +51,11 @@ header
 
 //Fonctionnement Section
 
-
+#index__fonctionnement
+{
+    display: flex;
+    flex-direction: column;
+}
 
 //Accueil - Restaurants 
 
