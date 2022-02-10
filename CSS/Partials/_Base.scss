@@ -1,0 +1,42 @@
+//base contains boilerplate used throughout an entire site. 
+//This includes project-wide typography styles, and stylesheets that universally reset or normalize default CSS.
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.globalContainer__index
+{
+    h2 
+    {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        margin: 0%;
+    }  
+}
+
+#index__restaurants
+{
+    h3 
+    {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        margin: 0%;
+    }
+
+    p
+    {
+        margin: 0%;
+    }
+}
+
+footer
+{
+    h2
+    {
+        font-family: 'Shrikhand', cursive;
+    }
+}
