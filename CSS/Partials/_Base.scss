@@ -8,28 +8,25 @@ body
     font-family: 'Roboto', sans-serif;
 }
 
-.globalContainer__index
+#globalContainer__index
 {
     h2 
     {
         font-family: 'Roboto', sans-serif;
         font-weight: 900;
-        margin: 0%;
-    }  
-}
+        @include index__text--margin;
+    }
 
-#index__restaurants
-{
     h3 
     {
         font-family: 'Roboto', sans-serif;
         font-weight: 900;
-        margin: 0%;
+        @include index__text--margin;
     }
 
     p
     {
-        margin: 0%;
+        @include index__text--margin;
     }
 }
 
