@@ -5,3 +5,20 @@
     box-shadow: rgba(10, 10, 10, 0.15) 0px 3px 8px;
     
 }
+
+@mixin index--widthpadding {
+    width: 100%;
+    padding: 10% 5% 10% 5%;
+}
+
+@mixin index--width {
+    width: 100%;
+}
+
+@mixin index--padding {
+    padding: 10% 5% 10% 5%;
+}
+
+@mixin index__text--margin {
+    margin: 0px ;
+}
