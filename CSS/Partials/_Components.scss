@@ -18,9 +18,29 @@ button.fonctionnement__btn
     border: transparent;
     @include btn__border--radius ;
     @include box-shadow;
-    padding: 3%;
+    padding: 10px;
     margin: 1% 2% 1% 2% ;
+    font-size: 16px;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    
 }
+
+div.fonctionnement__number
+{
+    background-color: $primary;
+    color: $white;
+    border-radius: 50%;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 9px;
+    left: -10px;
+}
+
 
 // Icons in Index
 

@@ -56,7 +56,9 @@ header
     display: flex;
     flex-direction: column;
     margin: 3% 0% 3% 0%;
+    gap: 15px;
 }
+
 
 //Accueil - Restaurants 
 
@@ -98,6 +100,21 @@ header
         {
             display: flex;
             flex-direction: column;
+
+                .card__text--position
+                {
+                    position: relative;
+                    top: 0px;
+                    left: 0px;
+
+                    .fa-heart 
+                    {
+                        position: absolute;
+                        top: 6px;
+                        right: 33px;
+                        font-size: 25px;
+                    }
+                }
         }
     }
 }
