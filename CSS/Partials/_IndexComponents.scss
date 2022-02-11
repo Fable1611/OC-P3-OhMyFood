@@ -1,0 +1,95 @@
+//components are like "mini" layouts. Styles for small, reusable pieces of the site should reside here (think buttons, forms, profile pictures, etc.)
+
+// Links Index
+
+a.index__links--invisible
+{
+    text-decoration: none;
+    color: black;
+
+        &:hover
+        {
+            text-decoration: none;
+            color: black;
+        }
+}
+
+// Boutons Index
+
+button.reservation__btn 
+{
+    background-image: linear-gradient(to bottom right, #ec73da, #a15bdc);
+    margin: 20px 0px 20px 0px;
+    border: 1px transparent;
+    border-radius: 100px 100px 100px 100px;
+    padding: 2%;
+    color: $white;
+}
+
+button.fonctionnement__btn
+{
+    background-color: $grey-light;
+    border: transparent;
+    @include btn__border--radius ;
+    @include box-shadow;
+    padding: 10px;
+    margin: 1% 2% 1% 2% ;
+    font-size: 16px;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    
+}
+
+div.fonctionnement__number
+{
+    background-color: $primary;
+    color: $white;
+    border-radius: 50%;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 9px;
+    left: -10px;
+}
+
+
+// Icons in Index
+
+.fa-mobile-alt 
+{
+    color: $btn-darkgrey;
+
+}
+
+.fa-list-ul
+{
+    color: $btn-darkgrey;
+
+}
+
+.fa-store
+{
+    color: $btn-darkgrey;
+
+}
+
+.fa-heart
+{
+    color:#2e2e2e;
+    
+    &:hover
+    {
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 900;
+        content: "\f004" ;
+
+        background: -webkit-gradient(linear, left top, left bottom, from(#a15bdc), to(#ec73da));
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+    } 
+
+}
+
