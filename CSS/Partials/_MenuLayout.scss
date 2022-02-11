@@ -1,0 +1,70 @@
+//layout contains styles for different aspects of the site's structural layout (think of areas like nav bars, headers, footers, etc.)
+
+.menu__container
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+    &--IMG 
+    {
+        width: 100%;
+        height: 320px;
+        overflow: hidden;
+
+            img
+            {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+
+            }
+    }
+
+    &--Title
+    {
+        border-radius: 25px 25px 0px 0px;
+        background-color: $grey-light;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: absolute;
+        bottom: -1px;
+        left: -1px;
+        width: 100%;
+        border: 1px solid $grey-light;
+        text-align: center;
+
+        h2#restaurant__title
+        {
+            font-family: 'Shrikhand', cursive;
+        }
+    }
+
+}
+
+.menu__container2
+{
+    background-color: $grey-light;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    
+
+        &--btn 
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+ 
+            .container2__button
+            {
+                background-color: $white;
+                @include btn__border--radius;
+                @include box-shadow;
+                padding: 3%;
+                font-size: 18px;
+                border: 0px transparent;
+                text-align: left;
+            }
+        }
+}

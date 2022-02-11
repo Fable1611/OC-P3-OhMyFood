@@ -1,6 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#globalContainer__index h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  margin: 0px;
+}
+
+#globalContainer__index h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  margin: 0px;
+}
+
+#globalContainer__index p {
+  margin: 0px;
+}
+
+#globalContainer__menu h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 0px;
+}
+
+#globalContainer__menu h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin: 0px;
+}
+
+#globalContainer__menu p {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+footer h2#footer__title {
+  font-family: 'Shrikhand', cursive;
+}
+
+a.index__links--invisible {
+  text-decoration: none;
+  color: black;
+}
+
+a.index__links--invisible:hover {
+  text-decoration: none;
+  color: black;
+}
+
 button.reservation__btn {
-  background-color: #FF79DA;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ec73da), to(#a15bdc));
+  background-image: linear-gradient(to bottom right, #ec73da, #a15bdc);
   margin: 20px 0px 20px 0px;
   border: 1px transparent;
   border-radius: 100px 100px 100px 100px;
@@ -47,28 +100,17 @@ div.fonctionnement__number {
   color: #717171;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
+.fa-heart {
+  color: #2e2e2e;
 }
 
-#globalContainer__index h2 {
-  font-family: 'Roboto', sans-serif;
+.fa-heart:hover {
+  font-family: 'Font Awesome\ 5 Free';
   font-weight: 900;
-  margin: 0px;
-}
-
-#globalContainer__index h3 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  margin: 0px;
-}
-
-#globalContainer__index p {
-  margin: 0px;
-}
-
-footer h2 {
-  font-family: 'Shrikhand', cursive;
+  content: "\f004";
+  background: -webkit-gradient(linear, left top, left bottom, from(#a15bdc), to(#ec73da));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #globalContainer__index {
@@ -193,6 +235,7 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 3%;
 }
 
 #index__restaurants .restaurants__card .restaurants__card--text .card__text--position {
@@ -204,12 +247,82 @@ header img {
 #index__restaurants .restaurants__card .restaurants__card--text .card__text--position .fa-heart {
   position: absolute;
   top: 6px;
-  right: 33px;
+  right: 20px;
   font-size: 25px;
 }
 
 footer {
   background-color: #353535;
   color: white;
+}
+
+.menu__container {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.menu__container--IMG {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.menu__container--IMG img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.menu__container--Title {
+  border-radius: 25px 25px 0px 0px;
+  background-color: #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  width: 100%;
+  border: 1px solid #f6f6f6;
+  text-align: center;
+}
+
+.menu__container--Title h2#restaurant__title {
+  font-family: 'Shrikhand', cursive;
+}
+
+.menu__container2 {
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2%;
+}
+
+.menu__container2--btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.menu__container2--btn .container2__button {
+  background-color: white;
+  border-radius: 17px 17px 17px 17px;
+  -webkit-box-shadow: rgba(10, 10, 10, 0.15) 0px 3px 8px;
+          box-shadow: rgba(10, 10, 10, 0.15) 0px 3px 8px;
+  padding: 3%;
+  font-size: 18px;
+  border: 0px transparent;
+  text-align: left;
 }
 /*# sourceMappingURL=Style.css.map */
