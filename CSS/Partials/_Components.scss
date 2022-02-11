@@ -1,35 +1,5 @@
 //components are like "mini" layouts. Styles for small, reusable pieces of the site should reside here (think buttons, forms, profile pictures, etc.)
 
-
-
-// Mixin Index 
-
-@mixin box-shadow {
-
-    box-shadow: rgba(10, 10, 10, 0.15) 0px 3px 8px;    
-}
-
-@mixin index--widthpadding {
-    width: 100%;
-    padding: 10% 5% 10% 5%;
-}
-
-@mixin index--width {
-    width: 100%;
-}
-
-@mixin index--padding {
-    padding: 10% 5% 10% 5%;
-}
-
-@mixin index__text--margin {
-    margin: 0px ;
-}
-
-@mixin btn__border--radius {
-    border-radius: 17px 17px 17px 17px;  
-}
-
 // Boutons Index
 
 button.reservation__btn 
@@ -51,3 +21,24 @@ button.fonctionnement__btn
     padding: 3%;
     margin: 1% 2% 1% 2% ;
 }
+
+// Icons in Index
+
+.fa-mobile-alt 
+{
+    color: $btn-darkgrey;
+
+}
+
+.fa-list-ul
+{
+    color: $btn-darkgrey;
+
+}
+
+.fa-store
+{
+    color: $btn-darkgrey;
+
+}
+
