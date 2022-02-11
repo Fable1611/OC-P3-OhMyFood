@@ -18,6 +18,18 @@ button.fonctionnement__btn {
   margin: 1% 2% 1% 2%;
 }
 
+.fa-mobile-alt {
+  color: #717171;
+}
+
+.fa-list-ul {
+  color: #717171;
+}
+
+.fa-store {
+  color: #717171;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }

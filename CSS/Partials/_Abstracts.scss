@@ -9,7 +9,35 @@ $grey-light :  #f6f6f6 ;
 $grey-dark : #eaeaea ;
 $green-light : #99e2d0 ;
 $green-dark : #008766 ;
+$btn-darkgrey: #717171 ;
 
 $brown-footer : #353535 ;
 
 
+// Mixin Index 
+
+@mixin box-shadow {
+
+    box-shadow: rgba(10, 10, 10, 0.15) 0px 3px 8px;    
+}
+
+@mixin index--widthpadding {
+    width: 100%;
+    padding: 10% 5% 10% 5%;
+}
+
+@mixin index--width {
+    width: 100%;
+}
+
+@mixin index--padding {
+    padding: 10% 5% 10% 5%;
+}
+
+@mixin index__text--margin {
+    margin: 0px ;
+}
+
+@mixin btn__border--radius {
+    border-radius: 17px 17px 17px 17px;  
+}
