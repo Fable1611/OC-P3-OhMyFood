@@ -1,4 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+button.reservation__btn {
+  background-color: #FF79DA;
+  margin: 20px 0px 20px 0px;
+  border: 1px transparent;
+  border-radius: 100px 100px 100px 100px;
+  padding: 2%;
+  color: white;
+}
+
+button.fonctionnement__btn {
+  background-color: #f6f6f6;
+  border: transparent;
+  border-radius: 17px 17px 17px 17px;
+  -webkit-box-shadow: rgba(10, 10, 10, 0.15) 0px 3px 8px;
+          box-shadow: rgba(10, 10, 10, 0.15) 0px 3px 8px;
+  padding: 3%;
+  margin: 1% 2% 1% 2%;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -89,6 +108,7 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 3% 0% 3% 0%;
 }
 
 #index__restaurants {

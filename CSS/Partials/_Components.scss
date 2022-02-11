@@ -1,9 +1,12 @@
 //components are like "mini" layouts. Styles for small, reusable pieces of the site should reside here (think buttons, forms, profile pictures, etc.)
 
+
+
+// Mixin Index 
+
 @mixin box-shadow {
 
-    box-shadow: rgba(10, 10, 10, 0.15) 0px 3px 8px;
-    
+    box-shadow: rgba(10, 10, 10, 0.15) 0px 3px 8px;    
 }
 
 @mixin index--widthpadding {
@@ -21,4 +24,30 @@
 
 @mixin index__text--margin {
     margin: 0px ;
+}
+
+@mixin btn__border--radius {
+    border-radius: 17px 17px 17px 17px;  
+}
+
+// Boutons Index
+
+button.reservation__btn 
+{
+    background-color: $secondary;
+    margin: 20px 0px 20px 0px;
+    border: 1px transparent;
+    border-radius: 100px 100px 100px 100px;
+    padding: 2%;
+    color: $white;
+}
+
+button.fonctionnement__btn
+{
+    background-color: $grey-light;
+    border: transparent;
+    @include btn__border--radius ;
+    @include box-shadow;
+    padding: 3%;
+    margin: 1% 2% 1% 2% ;
 }
