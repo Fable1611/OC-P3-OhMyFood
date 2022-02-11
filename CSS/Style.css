@@ -14,8 +14,25 @@ button.fonctionnement__btn {
   border-radius: 17px 17px 17px 17px;
   -webkit-box-shadow: rgba(10, 10, 10, 0.15) 0px 3px 8px;
           box-shadow: rgba(10, 10, 10, 0.15) 0px 3px 8px;
-  padding: 3%;
+  padding: 10px;
   margin: 1% 2% 1% 2%;
+  font-size: 16px;
+  position: relative;
+  top: 0px;
+  right: 0px;
+}
+
+div.fonctionnement__number {
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  top: 9px;
+  left: -10px;
 }
 
 .fa-mobile-alt {
@@ -121,6 +138,7 @@ header img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 3% 0% 3% 0%;
+  gap: 15px;
 }
 
 #index__restaurants {
@@ -175,6 +193,19 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#index__restaurants .restaurants__card .restaurants__card--text .card__text--position {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+#index__restaurants .restaurants__card .restaurants__card--text .card__text--position .fa-heart {
+  position: absolute;
+  top: 6px;
+  right: 33px;
+  font-size: 25px;
 }
 
 footer {
