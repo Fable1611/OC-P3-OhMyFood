@@ -51,6 +51,16 @@ a.index__links--invisible:hover {
   color: black;
 }
 
+a#footer__link {
+  text-decoration: none;
+  color: white;
+}
+
+a#footer__link:hover {
+  text-decoration: none;
+  color: white;
+}
+
 button.reservation__btn {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#ec73da), to(#a15bdc));
   background-image: linear-gradient(to bottom right, #ec73da, #a15bdc);
