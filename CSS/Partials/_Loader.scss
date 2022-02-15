@@ -1,0 +1,42 @@
+#houdini
+{
+   width: 100%;
+   height: 3000px;
+   background-color: white;
+}
+
+.loader
+{
+
+//Creation du loader
+
+    border: 10px solid white;
+    border-top: 15px solid blue;
+    border-bottom: 15px solid red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+// Positionnement
+
+    margin: auto;
+    position: absolute;
+    top: 0;left: 0;bottom: 0;right: 0;
+
+//Animation 
+
+    animation: spin 2000ms ease-in-out infinite backwards;
+}
+
+@keyframes spin 
+{
+    0% 
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+
+    }    
+}
