@@ -57,6 +57,42 @@ header
     flex-direction: column;
     margin: 3% 0% 3% 0%;
     gap: 15px;
+
+    .fonctionnement__btn
+        {
+            text-align: center;
+            background-color: $grey-light;
+            border: transparent;
+            @include btn__border--radius ;
+            @include box-shadow;
+            padding: 10px;
+            margin: 1% 2% 1% 2% ;
+            font-size: 16px;
+            position: relative;
+            top: 0px;
+            right: 0px;
+
+            &:hover
+            {
+                background-color: lighten($color: $grey-light, $amount: 3);
+                @include box-shadow--big;
+            }
+        }
+
+    
+        .fonctionnement__number
+        {
+            background-color: $primary;
+            color: $white;
+            border-radius: 50%;
+            text-align: center;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            position: absolute;
+            top: 9px;
+            left: -10px;
+        }
 }
 
 
@@ -79,6 +115,11 @@ header
         margin: 0px 2% 0px 2%;
         @include box-shadow;
 
+        &:hover
+        {
+            @include box-shadow--big;
+            background-color: lighten($color: $white, $amount: 3)
+        }
 
         .restaurants__card--img
         {

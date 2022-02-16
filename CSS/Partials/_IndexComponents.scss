@@ -34,37 +34,15 @@ button.reservation__btn
     margin: 20px 0px 20px 0px;
     border: 1px transparent;
     border-radius: 100px 100px 100px 100px;
+    @include box-shadow;
     padding: 2%;
     color: $white;
-}
 
-button.fonctionnement__btn
-{
-    background-color: $grey-light;
-    border: transparent;
-    @include btn__border--radius ;
-    @include box-shadow;
-    padding: 10px;
-    margin: 1% 2% 1% 2% ;
-    font-size: 16px;
-    position: relative;
-    top: 0px;
-    right: 0px;
-    
-}
-
-div.fonctionnement__number
-{
-    background-color: $primary;
-    color: $white;
-    border-radius: 50%;
-    text-align: center;
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    position: absolute;
-    top: 9px;
-    left: -10px;
+        &:hover
+        {
+            @include box-shadow--big;
+            background-image: linear-gradient(to bottom right, hsl(309, 70%, 71%), hsl(273, 60%, 63%));;
+        }
 }
 
 
@@ -99,7 +77,7 @@ div.fonctionnement__number
         content: "\f004" ;
 
         background: -webkit-gradient(linear, left top, left bottom, from(#a15bdc), to(#ec73da));
-	    -webkit-background-clip: text;
+	    //-webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
     } 
 

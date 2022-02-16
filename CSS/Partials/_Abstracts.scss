@@ -20,6 +20,11 @@ $brown-footer : #353535 ;
     box-shadow: rgba(10, 10, 10, 0.15) 0px 3px 8px;    
 }
 
+@mixin box-shadow--big {
+
+    box-shadow: rgba(10, 10, 10, 0.40) 0px 3px 8px;    
+}
+
 @mixin index--widthpadding {
     width: 100%;
     padding: 10% 5% 10% 5%;

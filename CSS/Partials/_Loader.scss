@@ -1,0 +1,193 @@
+$anim-dur: 3000ms;
+
+.loader__container
+
+{
+
+    // Positionnement
+    margin: auto;
+    position: absolute;
+    top: 0;left: 0;bottom: 0;right: 0;
+    width: 100%;
+    height: 5000px;
+    background-color: white;
+    z-index: 1;
+    animation: scale $anim-dur ease-in-out 1 both;
+    
+
+
+
+        .loader__animation--1
+        {
+
+        //Creation du loader
+            background-color: $grey-light;
+            border: 10px solid white;
+            border-top: 15px solid $primary ;
+            border-bottom: 15px solid $tertiary;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            z-index: 10;
+
+        // Positionnement
+
+            margin: auto;
+            position: absolute;
+            top: 0;left: 0;bottom: 0;right: 0;
+            scale: 1.5;
+            &:active
+            {
+                transform: scale(0);
+            }
+
+        //Animation 
+
+            animation: spin ease-in-out 1 both;
+            animation-duration: $anim-dur;
+
+            transition: all 3s;
+        }
+
+        .loader__animation--2
+        {
+
+        //Creation du loader
+            background-color: $grey-light;
+            border: 10px solid white;
+            border-top: 15px solid $secondary ;
+            border-bottom: 15px solid $secondary;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            z-index: 9;
+        // Positionnement
+
+            margin: auto;
+            position: absolute;
+            top: 0;left: 0;bottom: 0;right: 0;
+            scale: 1.5;
+            &:active
+            {
+                transform: scale(0);
+            }
+
+        //Animation 
+
+            animation: spin-invert ease-in-out 1 both;
+            animation-duration: $anim-dur;
+
+            transition: all 3s;
+        }
+
+        .loader__animation--3
+        {
+
+        //Creation du loader
+            background-color: $grey-light;
+            border: 10px solid white;
+            border-top: 15px solid $primary ;
+            border-bottom: 15px solid $tertiary;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            z-index: 8;
+
+        // Positionnement
+
+            margin: auto;
+            position: absolute;
+            top: 0;left: 0;bottom: 0;right: 0;
+            scale: 1.5;
+            &:active
+            {
+                transform: scale(0);
+            }
+
+        //Animation 
+
+            animation: spin-slow ease-in-out 1 both;
+            animation-duration: $anim-dur;
+
+            transition: all 3s;
+        }
+
+
+
+}
+@keyframes spin 
+{
+    0% 
+    {
+        transform: rotate(0deg);
+        
+    }
+    50%
+    {
+        transform: rotate(360deg);  
+    }
+    90%
+    {
+        transform: rotate(5deg); 
+    }
+    100%
+    {
+        transform: rotate(0deg) scale(0);
+    }    
+}
+
+@keyframes spin-invert 
+{
+    0% 
+    {
+        transform: rotate(0deg);
+        
+    }
+    50%
+    {
+        transform: rotate(-360deg);  
+    }
+    90%
+    {
+        transform: rotate(5deg); 
+    }
+    100%
+    {
+        transform: rotate(0deg) scale(0);
+    }    
+}
+
+@keyframes spin-slow 
+{
+    0% 
+    {
+        transform: rotate(0deg);
+        
+    }
+
+    90%
+    {
+        transform: rotate(710deg); 
+    }
+    100%
+    {
+        transform: rotate(720deg) scale(0);
+    }    
+}
+
+@keyframes scale 
+{
+    0% 
+    {
+        transform:  scale(1);
+        
+    }
+    90%
+    {
+        transform:  scale(1);
+    }
+    100%
+    {
+        transform:   scale(0);
+    }    
+}
