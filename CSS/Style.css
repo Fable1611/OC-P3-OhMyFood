@@ -93,7 +93,7 @@ button.reservation__btn:hover {
 }
 
 .fa-heart {
-  color: #9356DC;
+  color: black;
 }
 
 .fa-heart:hover {
@@ -101,6 +101,8 @@ button.reservation__btn:hover {
   font-weight: 900;
   content: "\f004";
   background: -webkit-gradient(linear, left top, left bottom, from(#a15bdc), to(#ec73da));
+  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
