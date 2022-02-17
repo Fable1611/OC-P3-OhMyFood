@@ -1,6 +1,18 @@
-$anim-dur: 3000ms;
+$anim-dur: 2000ms;
 
-.loader__container
+$num-anim: 6;
+$num-anim2: 10;
+
+$anim-width: 30px;
+$anim-height: 30px;
+
+
+$anim-zindex: 11;
+
+$anim-padding: 10px;
+$anim-padding2: 15px;
+
+.loader
 
 {
 
@@ -13,108 +25,95 @@ $anim-dur: 3000ms;
     background-color: white;
     z-index: 1;
     animation: scale $anim-dur ease-in-out 1 both;
-    
 
-
-
-        .loader__animation--1
+        #welcome
         {
-
-        //Creation du loader
-            background-color: $grey-light;
-            border: 10px solid white;
-            border-top: 15px solid $primary ;
-            border-bottom: 15px solid $tertiary;
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
+            font-family: 'Shrikhand', cursive;
             z-index: 10;
-
-        // Positionnement
-
-            margin: auto;
             position: absolute;
-            top: 0;left: 0;bottom: 0;right: 0;
-            scale: 1.5;
-            &:active
-            {
-                transform: scale(0);
-            }
+            top: 0;left: 0;
+            color: $primary;
 
-        //Animation 
-
-            animation: spin ease-in-out 1 both;
-            animation-duration: $anim-dur;
-
-            transition: all 3s;
         }
 
-        .loader__animation--2
+        &__animation
         {
 
-        //Creation du loader
-            background-color: $grey-light;
-            border: 10px solid white;
-            border-top: 15px solid $secondary ;
-            border-bottom: 15px solid $secondary;
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-            z-index: 9;
-        // Positionnement
+            //boucle magique
 
-            margin: auto;
-            position: absolute;
-            top: 0;left: 0;bottom: 0;right: 0;
-            scale: 1.5;
-            &:active
+            @for $i from 1 through $num-anim 
             {
-                transform: scale(0);
+                &--#{$i} 
+                {
+                    
+                    //dimensions des cercles
+                    width: $anim-width * $i *1.5;
+                    height: $anim-height *$i *1.5;
+
+                    //style des cercles
+                    background-color: $grey-light;
+                    border:10px + $i solid white ;
+                    border-radius: 50%;
+                    border-top: 15px + $i solid $primary ;
+                    border-bottom: 15px + $i solid $tertiary;
+
+                    //positionnement des cercles
+                    z-index: $anim-zindex - $i;  
+                    margin: auto;
+                    padding: $anim-padding + $i;
+                    position: absolute;
+                    top: 0;left: 0;bottom: 0;right: 0;
+                    scale: 1;
+
+                    //Animation 
+                    animation: ease-in-out 1 both;
+                    //animation-duration: random(5)*1000ms;
+                    animation-duration: $anim-dur;
+
+
+
+                }
             }
 
-        //Animation 
+            //modifiers individuels 
 
-            animation: spin-invert ease-in-out 1 both;
-            animation-duration: $anim-dur;
-
-            transition: all 3s;
-        }
-
-        .loader__animation--3
-        {
-
-        //Creation du loader
-            background-color: $grey-light;
-            border: 10px solid white;
-            border-top: 15px solid $primary ;
-            border-bottom: 15px solid $tertiary;
-            border-radius: 50%;
-            width: 300px;
-            height: 300px;
-            z-index: 8;
-
-        // Positionnement
-
-            margin: auto;
-            position: absolute;
-            top: 0;left: 0;bottom: 0;right: 0;
-            scale: 1.5;
-            &:active
+            &--1
             {
-                transform: scale(0);
+                animation-name: spin;
+                border-left: 15px solid $primary ;
+                border-right: 15px  solid $tertiary;
+                border-top: 10px  solid $white ;
+                border-bottom: 10px  solid $white;
             }
+            &--2
+            {
+                animation-name: spin-invert;
 
-        //Animation 
+            }
+            &--3
+            {
+                animation-name: spin;
+            }
+            &--4
+            {
+                animation-name: spin-invert;
 
-            animation: spin-slow ease-in-out 1 both;
-            animation-duration: $anim-dur;
+            }
+            &--5
+            {
+                animation-name: spin;
+            }
+            &--6
+            {
+                animation-name: spin-invert;
 
-            transition: all 3s;
+            }
         }
 
-
-
+        
 }
+
+
 @keyframes spin 
 {
     0% 
@@ -126,13 +125,10 @@ $anim-dur: 3000ms;
     {
         transform: rotate(360deg);  
     }
-    90%
-    {
-        transform: rotate(5deg); 
-    }
+  
     100%
     {
-        transform: rotate(0deg) scale(0);
+        transform: rotate(0deg) ;
     }    
 }
 
@@ -147,13 +143,10 @@ $anim-dur: 3000ms;
     {
         transform: rotate(-360deg);  
     }
-    90%
-    {
-        transform: rotate(5deg); 
-    }
+   
     100%
     {
-        transform: rotate(0deg) scale(0);
+        transform: rotate(0deg);
     }    
 }
 
