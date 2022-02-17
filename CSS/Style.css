@@ -93,15 +93,44 @@ button.reservation__btn:hover {
 }
 
 .fa-heart {
-  color: #9356DC;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
 .fa-heart:hover {
-  font-family: 'Font Awesome\ 5 Free';
-  font-weight: 900;
-  content: "\f004";
-  background: -webkit-gradient(linear, left top, left bottom, from(#a15bdc), to(#ec73da));
-  -webkit-text-fill-color: transparent;
+  -webkit-animation: fill 1s ease-in-out 1 forwards;
+          animation: fill 1s ease-in-out 1 forwards;
+}
+
+@-webkit-keyframes fill {
+  0% {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    z-index: 10;
+  }
+  100% {
+    -webkit-text-fill-color: #9356DC;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: transparent;
+    z-index: 10;
+  }
+}
+
+@keyframes fill {
+  0% {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    z-index: 10;
+  }
+  100% {
+    -webkit-text-fill-color: #9356DC;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: transparent;
+    z-index: 10;
+  }
 }
 
 #globalContainer__index {
@@ -125,7 +154,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 5px 0px 5px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 header img {
@@ -287,6 +316,12 @@ footer {
   color: white;
 }
 
+header__container {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
 .menu__container {
   position: relative;
   top: 0px;
@@ -357,9 +392,17 @@ footer {
   text-align: left;
 }
 
+.fa-arrow-left {
+  font-size: 20px;
+  color: #353535;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 .loader {
   margin: auto;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;

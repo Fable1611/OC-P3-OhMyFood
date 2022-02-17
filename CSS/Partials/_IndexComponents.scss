@@ -68,18 +68,36 @@ button.reservation__btn
 
 .fa-heart
 {
-    color:$primary;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
     
     &:hover
     {
-        font-family: 'Font Awesome\ 5 Free';
-        font-weight: 900;
-        content: "\f004" ;
+        animation: fill 1s ease-in-out 1 forwards;
 
-        background: -webkit-gradient(linear, left top, left bottom, from(#a15bdc), to(#ec73da));
-	    //-webkit-background-clip: text;
-	    -webkit-text-fill-color: transparent;
     } 
 
 }
+//animation de remplissage du Coeur
 
+@keyframes fill
+{
+    0%
+    {
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;  
+        z-index: 10;
+    }
+
+    100%
+    {
+        
+        -webkit-text-fill-color: $primary;
+        -webkit-text-stroke-width: 0px;
+        -webkit-text-stroke-color: transparent;
+        z-index: 10;
+
+    }
+}
