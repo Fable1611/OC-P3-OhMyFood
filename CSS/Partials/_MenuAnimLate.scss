@@ -1,0 +1,59 @@
+$num-anim3: 9;
+$anim-delay: 250ms;
+
+
+.menu__container2
+{
+    background-color: $grey-light;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    
+    &--buttons 
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;      
+ 
+        .container2__button
+        {
+            @for $i from 1 through $num-anim3 
+            {
+                &--#{$i} 
+                {
+                
+                // Styling des boutons
+
+                    background-color: $white;
+                    @include btn__border--radius;
+                    @include box-shadow;
+                    padding: 3%;
+                    font-size: 18px;
+                    border: 0px transparent;
+                    text-align: left;
+
+                    opacity: 0%;
+                    transform: translateY(7px) ;
+                
+                //Animation 
+                    animation: late 1000ms ease-in-out $anim-delay * $i 1 normal forwards;
+                }
+            }
+        }   
+    }
+      
+}
+
+@keyframes late 
+{
+    0%
+    {
+        opacity: 0%;
+        transform: translateY(7px) ;
+    }
+    100%
+    {
+        opacity: 100%;
+        transform: translateY(0px) ;
+    }
+}

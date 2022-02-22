@@ -1,14 +1,14 @@
 //layout contains styles for different aspects of the site's structural layout (think of areas like nav bars, headers, footers, etc.)
 
-header__container
+.header__container
 {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    .arrow__container
-    {
-        
-    }
+display: flex;
+flex-direction: row;
+justify-content: center;
+position: relative;
+top: 0px;
+left: 0px;
+margin-bottom: 2%;
 }
 
 .menu__container
