@@ -21,16 +21,18 @@ $anim-delay: 250ms;
             {
                 &--#{$i} 
                 {
+                    display: flex;
                 
                 // Styling des boutons
 
                     background-color: $white;
                     @include btn__border--radius;
                     @include box-shadow;
-                    padding: 3%;
+            
                     font-size: 18px;
                     border: 0px transparent;
                     text-align: left;
+                
 
                     opacity: 0%;
                     transform: translateY(7px) ;
@@ -38,11 +40,32 @@ $anim-delay: 250ms;
                 //Animation 
                     animation: late 1000ms ease-in-out $anim-delay * $i 1 normal forwards;
                 }
+
             }
         }   
     }
       
 }
+
+//rajout d'un bouton pour delice des sens
+
+.menu__container2--buttons .container2__button--10 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: white;
+    border-radius: 17px 17px 17px 17px;
+    -webkit-box-shadow: rgba(10, 10, 10, 0.15) 0px 3px 8px;
+            box-shadow: rgba(10, 10, 10, 0.15) 0px 3px 8px;
+    font-size: 18px;
+    border: 0px transparent;
+    text-align: left;
+    opacity: 0%;
+    -webkit-transform: translateY(7px);
+            transform: translateY(7px);
+    -webkit-animation: late 1000ms ease-in-out 2500ms 1 normal forwards;
+            animation: late 1000ms ease-in-out 2500ms 1 normal forwards;
+  }
 
 @keyframes late 
 {

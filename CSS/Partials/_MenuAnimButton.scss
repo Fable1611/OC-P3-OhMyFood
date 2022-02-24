@@ -1,0 +1,104 @@
+
+.newButton
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: auto;
+    background-color: $white;
+
+
+    @include btn__border--radius;
+    overflow: hidden;
+
+
+   .texte
+    {
+        background-color: $white;
+        min-width: 60%;
+        width: 78%;
+        text-align: left;
+        padding: 5px;
+
+
+        h3 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 2%;
+          }
+        p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 2%;
+          }
+        
+    }
+
+  
+
+    .price
+    {
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+
+        min-width: 22%;
+        padding: 5px 5px 5px 5px;
+        background-color: $white;
+        text-align: right;
+
+        &:hover+div
+        {
+            width: 25%; 
+        }
+        &:hover+div .fa-check-circle
+        {
+            animation: faspin 500ms ease-in-out 50ms 1 forwards;
+        }
+    }
+
+    .icone
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: $tertiary;
+        width: 0%;
+        padding: 5px 0px 5px 0px;
+        
+        transition: all 500ms ease-in-out 50ms;
+
+
+            .fa-check-circle
+            {
+                color: $white;
+                font-size: 22px;
+                width: 22px;
+            }
+    
+    }
+
+}
+
+.fa-spinning:hover
+{
+    animation: faspin 500ms ease-in-out 50ms 1 forwards;
+}
+
+@keyframes faspin 
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }    
+
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}

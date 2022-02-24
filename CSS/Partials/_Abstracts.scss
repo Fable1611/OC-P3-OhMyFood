@@ -38,10 +38,19 @@ $brown-footer : #353535 ;
     padding: 10% 5% 10% 5%;
 }
 
+@mixin header--padding {
+    padding: 3% 0% 3% 0%;
+}
+
 @mixin index__text--margin {
     margin: 0px ;
 }
 
 @mixin btn__border--radius {
     border-radius: 17px 17px 17px 17px;  
+}
+
+@mixin icon__padding {
+    padding-right: 10%;
+    padding-left: 10%;
 }

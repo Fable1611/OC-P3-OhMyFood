@@ -37,13 +37,18 @@ margin-bottom: 2%;
         border-radius: 25px 25px 0px 0px;
         background-color: $grey-light;
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 0px;
+        border: 1px solid $grey-light;
+
         position: absolute;
         bottom: -1px;
         left: -1px;
         width: 100%;
-        border: 1px solid $grey-light;
-        text-align: center;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
 
         h2#restaurant__title
         {
@@ -53,29 +58,17 @@ margin-bottom: 2%;
 
 }
 
-.menu__container2
+.border__green
 {
-    background-color: $grey-light;
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
-    
+    width: 10%;
+    height: 5px;
+    margin: 3px 0px 15px 0px;
+    background-color: $tertiary;
+}
 
-        &--btn 
-        {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
- 
-            .container2__button
-            {
-                background-color: $white;
-                @include btn__border--radius;
-                @include box-shadow;
-                padding: 3%;
-                font-size: 18px;
-                border: 0px transparent;
-                text-align: left;
-            }
-        }
+.reservation__btn--container
+{
+    display: flex;
+    justify-content: center;
+    background-color: $grey-light;
 }
