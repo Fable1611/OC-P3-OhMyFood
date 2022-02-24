@@ -16,7 +16,8 @@ header
 {
     display: flex;
     justify-content: center;
-    padding: 0px 0px 0px 0px;
+    @include header--padding;
+
         img 
         {
             object-fit: contain;
@@ -37,14 +38,32 @@ header
     .explore__location
     {
         background-color: $grey-dark;
+
         @include index--width;
+        @include header--padding;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
     .explore__reservation
     {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+
         background-color: $grey-light;
+
         @include index--width;
         padding: 5% 0% 5% 0%;
+    }
+
+    .explore__reservation > p, h2
+    {
+        padding: 0% 5% 0% 5%;
     }
 
 }
@@ -60,22 +79,33 @@ header
 
     .fonctionnement__btn
         {
-            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
             background-color: $grey-light;
             border: transparent;
-            @include btn__border--radius ;
-            @include box-shadow;
             padding: 10px;
             margin: 1% 2% 1% 2% ;
             font-size: 16px;
+
+            @include btn__border--radius ;
+            @include box-shadow;
+            
+            
             position: relative;
             top: 0px;
             right: 0px;
 
             &:hover
             {
-                background-color: lighten($color: $grey-light, $amount: 3);
+                background-color: #f5edff;
                 @include box-shadow--big;
+            }
+
+            &:hover > i 
+            {
+                color: $primary;
             }
         }
 
@@ -163,8 +193,19 @@ header
 
 // Footer Section
 
-footer 
+footer>div 
 {
     background-color: $brown-footer;
     color: $white;
+    padding-left: 3%;
+    padding-bottom: 35px;
+    padding-top: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+
+    
+
 }

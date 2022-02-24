@@ -31,13 +31,15 @@ a#footer__link
 button.reservation__btn 
 {
     background-image: linear-gradient(to bottom right, #ec73da, #a15bdc);
+    color: $white;
+
     margin: 20px 0px 20px 0px;
     border: 1px transparent;
     border-radius: 100px 100px 100px 100px;
-    @include box-shadow;
-    padding: 2%;
-    color: $white;
+    width: 55%;
 
+    @include box-shadow;
+    
         &:hover
         {
             @include box-shadow--big;
@@ -48,22 +50,27 @@ button.reservation__btn
 
 // Icons in Index
 
+.fa-map-marker-alt
+{
+    padding-right: 5%;
+}
+
 .fa-mobile-alt 
 {
     color: $btn-darkgrey;
-
+    @include icon__padding
 }
 
 .fa-list-ul
 {
     color: $btn-darkgrey;
-
+    @include icon__padding
 }
 
 .fa-store
 {
     color: $btn-darkgrey;
-
+    @include icon__padding
 }
 
 .fa-heart
@@ -79,6 +86,17 @@ button.reservation__btn
     } 
 
 }
+
+.fa-utensils
+{
+    margin-right: 10px;
+}
+
+.fa-hands-helping
+{
+    margin-right: 10px;
+}
+
 //animation de remplissage du Coeur
 
 @keyframes fill
