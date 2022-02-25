@@ -12,6 +12,16 @@
     overflow: hidden;
 
 
+    &:hover>.icone
+    {
+        width: 25%; 
+    }
+    &:hover>div .fa-check-circle
+    {
+        animation: faspin 500ms ease-in-out 50ms 1 forwards;
+    }
+
+
    .texte
     {
         background-color: $white;
@@ -50,15 +60,7 @@
         padding: 5px 5px 5px 5px;
         background-color: $white;
         text-align: right;
-
-        &:hover+div
-        {
-            width: 25%; 
-        }
-        &:hover+div .fa-check-circle
-        {
-            animation: faspin 500ms ease-in-out 50ms 1 forwards;
-        }
+    
     }
 
     .icone
@@ -85,10 +87,7 @@
 
 }
 
-.fa-spinning:hover
-{
-    animation: faspin 500ms ease-in-out 50ms 1 forwards;
-}
+
 
 @keyframes faspin 
 {
