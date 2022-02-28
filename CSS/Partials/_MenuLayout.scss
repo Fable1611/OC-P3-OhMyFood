@@ -1,5 +1,37 @@
 //layout contains styles for different aspects of the site's structural layout (think of areas like nav bars, headers, footers, etc.)
 
+#globalContainer__menu
+{
+
+    background-color: $white;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+
+    h2 
+    {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        @include index__text--margin;
+    }
+
+    h3 
+    {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        @include index__text--margin;
+    }
+
+    p
+    {
+        @include index__text--margin;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+}
+
 .header__container
 {
 display: flex;
@@ -71,4 +103,57 @@ margin-bottom: 2%;
     display: flex;
     justify-content: center;
     background-color: $grey-light;
+}
+
+@media only screen and (min-width: 768px)
+{
+    #globalContainer__menu
+    {
+        width: 90%;
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (min-width: 1040px)
+{
+    #globalContainer__menu
+    {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .menu__container
+    {
+
+        &--IMG 
+        {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1600px)
+{
+        #globalContainer__menu
+    {
+        width: 85%;
+        font-size: 20px;
+    }
+
+        .menu__container
+    {
+
+        &--IMG 
+        {
+            width: 100%;
+            height: 450px;
+            overflow: hidden;
+
+        }
+    }
 }

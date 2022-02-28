@@ -8,52 +8,6 @@ body
     font-family: 'Roboto', sans-serif;
 }
 
-#globalContainer__index
-{
-    h2 
-    {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 900;
-        @include index__text--margin;
-    }
-
-    h3 
-    {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 900;
-        @include index__text--margin;
-    }
-
-    p
-    {
-        @include index__text--margin;
-    }
-}
-
-#globalContainer__menu
-{
-    h2 
-    {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        @include index__text--margin;
-    }
-
-    h3 
-    {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-        @include index__text--margin;
-    }
-
-    p
-    {
-        @include index__text--margin;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-    }
-}
-
 
 footer
 {
