@@ -83,24 +83,4 @@ button.reservation__btn
     margin-right: 10px;
 }
 
-.fa-heart
-{
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-
-    transition: all 1200ms ease-in-out ;
-    -webkit-transition: all 1200ms ease-in-out ;
-    -moz-transition: all 1200ms ease-in-out ;
-    -o-transition: all 1200ms ease-in-out ;    
-
-    &:hover
-    {
-        -webkit-text-fill-color: $primary;
-        -webkit-text-stroke-width: 0px;
-        -webkit-text-stroke-color: transparent;
-
-    } 
-
-}
 

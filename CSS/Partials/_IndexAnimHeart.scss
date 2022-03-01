@@ -1,0 +1,30 @@
+
+.fa-position
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+
+.fa-heart
+{
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 2px black;
+
+    font-size: 22px;
+    transform: scale(1); 
+    
+    transition: all 1500ms;
+
+}
+
+.fa-heart:hover
+{
+    -webkit-text-fill-color: $primary;
+    -webkit-text-stroke: 2px transparent;
+
+    font-size: 22px;
+    transform: scale(1.2);
+}
