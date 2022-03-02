@@ -1,30 +1,144 @@
 
-.fa-position
+//Animation Coeur pour l'index
+
+.restaurants__card--text
 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
+
+    .heart__container
+    {
+        position: relative;
+        top: 0px;
+        right: 0px;
+
+        &--stack
+        {
+            position: absolute;
+            top: -10px;
+            right: 5px;
+
+            .fa-heart
+            {
+                font-size: 24px;
+
+                //animation du coeur
+
+                z-index: 1;
+                opacity: 100%;
+                transition: all 1000ms ease-in-out; 
+            }
+
+            
+        }
+
+        &--stack2
+        {
+            position: absolute;
+            top: -10px;
+            right: 5px;
+
+            .fa-heart
+            {
+                //style du coeur 
+
+                background: -webkit-gradient(linear, left top, left bottom, from(#a15bdc), to(#ec73da));
+                background-clip: text;
+	            -webkit-background-clip: text;
+	            -webkit-text-fill-color: transparent;
+                
+
+                font-size: 24px;
+
+                //animation du coeur
+                z-index: 2; 
+                opacity: 0%;
+                transition: all 1000ms ease-in-out;
+            }
+
+            
+        }
+    }
+
+    .heart__container:hover>.heart__container--stack .fa-heart
+    {
+        opacity: 0%;
+    }
+
+    .heart__container:hover>.heart__container--stack2 .fa-heart
+    {
+        opacity: 100%;
+    }
+
+
 }
 
 
-.fa-heart
+
+//Animation Coeur pour les pages
+
+.menu__container--Title
 {
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 2px black;
+    .heart__container
+    {
+        position: relative;
+        top: 0px;
+        right: 0px;
 
-    font-size: 22px;
-    transform: scale(1); 
-    
-    transition: all 1500ms;
+        &--stack
+        {
+            position: absolute;
+            top: -10px;
+            right: 5px;
 
-}
+            .fa-heart
+            {
+                font-size: 24px;
 
-.fa-heart:hover
-{
-    -webkit-text-fill-color: $primary;
-    -webkit-text-stroke: 2px transparent;
+                //animation du coeur
 
-    font-size: 22px;
-    transform: scale(1.2);
+                z-index: 1;
+                opacity: 100%;
+                transition: all 1000ms ease-in-out; 
+            }
+
+            
+        }
+
+        &--stack2
+        {
+            position: absolute;
+            top: -10px;
+            right: 5px;
+
+            .fa-heart
+            {
+                //style du coeur 
+
+                background: -webkit-gradient(linear, left top, left bottom, from(#a15bdc), to(#ec73da));
+                background-clip: text;
+	            -webkit-background-clip: text;
+	            -webkit-text-fill-color: transparent;
+                
+
+                font-size: 24px;
+
+                //animation du coeur
+                z-index: 2; 
+                opacity: 0%;
+                transition: all 1000ms ease-in-out;
+            }
+
+            
+        }
+    }
+
+    .heart__container:hover>.heart__container--stack .fa-heart
+    {
+        opacity: 0%;
+    }
+
+    .heart__container:hover>.heart__container--stack2 .fa-heart
+    {
+        opacity: 100%;
+    }
+
 }

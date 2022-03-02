@@ -280,6 +280,7 @@ header img {
   margin: 0px 2% 0px 2%;
   -webkit-box-shadow: rgba(10, 10, 10, 0.15) 0px 3px 8px;
           box-shadow: rgba(10, 10, 10, 0.15) 0px 3px 8px;
+  position: relative;
 }
 
 #index__restaurants .index__restaurants--container .restaurants__card:hover {
@@ -288,13 +289,27 @@ header img {
   background-color: white;
 }
 
-#index__restaurants .index__restaurants--container .restaurants__card .restaurants__card--img {
+#index__restaurants .index__restaurants--container .restaurants__card--nouveau {
+  width: 100px;
+  height: 20px;
+  padding: 3px;
+  font-weight: 500;
+  background-color: #99E2D0;
+  color: #008766;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+#index__restaurants .index__restaurants--container .restaurants__card--img {
   width: 100%;
   height: 200px;
   overflow: hidden;
 }
 
-#index__restaurants .index__restaurants--container .restaurants__card .restaurants__card--img img {
+#index__restaurants .index__restaurants--container .restaurants__card--img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1023,29 +1038,96 @@ footer > div {
   }
 }
 
-.fa-position {
+.restaurants__card--text .heart__container {
+  position: relative;
+  top: 0px;
+  right: 0px;
+}
+
+.restaurants__card--text .heart__container--stack {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -10px;
+  right: 5px;
+}
+
+.restaurants__card--text .heart__container--stack .fa-heart {
+  font-size: 24px;
+  z-index: 1;
+  opacity: 100%;
+  -webkit-transition: all 1000ms ease-in-out;
+  transition: all 1000ms ease-in-out;
+}
+
+.restaurants__card--text .heart__container--stack2 {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+}
+
+.restaurants__card--text .heart__container--stack2 .fa-heart {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a15bdc), to(#ec73da));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
   z-index: 2;
+  opacity: 0%;
+  -webkit-transition: all 1000ms ease-in-out;
+  transition: all 1000ms ease-in-out;
 }
 
-.fa-heart {
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke: 2px black;
-  font-size: 22px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all 1500ms;
-  transition: all 1500ms;
+.restaurants__card--text .heart__container:hover > .heart__container--stack .fa-heart {
+  opacity: 0%;
 }
 
-.fa-heart:hover {
-  -webkit-text-fill-color: #9356DC;
-  -webkit-text-stroke: 2px transparent;
-  font-size: 22px;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.restaurants__card--text .heart__container:hover > .heart__container--stack2 .fa-heart {
+  opacity: 100%;
+}
+
+.menu__container--Title .heart__container {
+  position: relative;
+  top: 0px;
+  right: 0px;
+}
+
+.menu__container--Title .heart__container--stack {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+}
+
+.menu__container--Title .heart__container--stack .fa-heart {
+  font-size: 24px;
+  z-index: 1;
+  opacity: 100%;
+  -webkit-transition: all 1000ms ease-in-out;
+  transition: all 1000ms ease-in-out;
+}
+
+.menu__container--Title .heart__container--stack2 {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+}
+
+.menu__container--Title .heart__container--stack2 .fa-heart {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a15bdc), to(#ec73da));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  z-index: 2;
+  opacity: 0%;
+  -webkit-transition: all 1000ms ease-in-out;
+  transition: all 1000ms ease-in-out;
+}
+
+.menu__container--Title .heart__container:hover > .heart__container--stack .fa-heart {
+  opacity: 0%;
+}
+
+.menu__container--Title .heart__container:hover > .heart__container--stack2 .fa-heart {
+  opacity: 100%;
 }
 
 .menu__container2 {
